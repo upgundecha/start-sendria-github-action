@@ -1,5 +1,5 @@
 name: 'Sendria SMTP server in GitHub Actions'
-description: 'Runs a Sendria smtp server in GitHub action. Sendria can be used as a fake smtp server to catch and test emails from the application in testing workflows.'
+description: 'Run a Sendria smtp server in GitHub action.'
 
 branding:
   icon: 'mail'
