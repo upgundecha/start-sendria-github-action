@@ -1,0 +1,28 @@
+name: 'Sendria SMTP server in GitHub Actions'
+description: 'Runs a Sendria smtp server in GitHub action. Sendria can be used as a fake smtp server to catch and test emails from the application in testing workflows.'
+
+branding:
+  icon: 'mail'
+  color: 'blue'
+
+inputs:
+  smtp-port:  
+    description: 'SMTP port'
+    required: false
+    default: 1025
+  http-port:  
+    description: 'HTTP port for UI and API'
+    required: false
+    default: 1080
+  sendira-version:  
+    description: 'Sendria version'
+    required: false
+    default: v2.2.2.0
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.smtp-port }}
+    - ${{ inputs.http-port }}
+    - ${{ inputs.sendria-version }}
