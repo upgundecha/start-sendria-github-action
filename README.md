@@ -19,7 +19,7 @@ Run Marcin Sztolcman's [Sendria](https://github.com/msztolcman/sendria) SMTP ser
 ## Example usage
 
 ```
-uses: upgundecha/sendria-github-action@v1.0.0
+uses: upgundecha/start-sendria-github-action@v1.0.0
 with:
   smtp-port: 1025
   http-port: 1080
